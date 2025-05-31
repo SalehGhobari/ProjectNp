@@ -56,3 +56,7 @@ If you encounter input issues, try running with:
 - `Server.java` - Game server handling connections and room management
 - `Client.java` - Client interface for players and challengers
 - Other supporting classes for game logic (`ClientHandler.java`, `Player.java`, `Challenger.java`, `Room.java`, `RoomManager.java`)
+
+## Game Files
+
+game java files are available in the app\src\main\java\com\projectnp\ directory 
