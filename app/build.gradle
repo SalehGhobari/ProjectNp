@@ -34,8 +34,27 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'com.projectnp.Main'
+    mainClass = 'com.projectnp.Server'
 }
+
+
+task runServer(type: JavaExec) {
+    group = 'application'
+    description = 'Run the Server application'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.projectnp.Server'
+    standardInput = System.in
+}
+
+task runClient(type: JavaExec) {
+    group = 'application'
+    description = 'Run the Client application'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.projectnp.Client'
+    standardInput = System.in
+}
+
+
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
